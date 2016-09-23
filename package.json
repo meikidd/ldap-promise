@@ -1,0 +1,23 @@
+{
+  "name": "ldap-promise",
+  "version": "0.1.0",
+  "description": "Small wrapper for ldap-client that use promises.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/meikidd/ldap-promise.git"
+  },
+  "keywords": [
+    "promise",
+    "ldap"
+  ],
+  "author": "meikidd <meikidd@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meikidd/ldap-promise/issues"
+  },
+  "homepage": "https://github.com/meikidd/ldap-promise#readme",
+  "dependencies": {
+    "ldap-client": "^3.1.3"
+  }
+}
