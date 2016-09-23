@@ -42,6 +42,72 @@ class LdapPromise extends LDAP {
       });
     });
   }
+  remove(dn) {
+    return new Promise((resolve, reject) => {
+      super.remove(dn, (err, data) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(data);
+        }
+      });
+    });
+  }
+  add(dn, attrs) {
+    return new Promise((resolve, reject) => {
+      super.add(dn, attrs, (err, data) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(data);
+        }
+      });
+    });
+  }
+  rename(dn, newrdn) {
+    return new Promise((resolve, reject) => {
+      super.rename(dn, newrdn, (err, data) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(data);
+        }
+      });
+    });
+  }
+  modify(dn, ops) {
+    return new Promise((resolve, reject) => {
+      super.search(dn, ops, (err, data) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(data);
+        }
+      });
+    });
+  }
+  findandbind(option) {
+    return new Promise((resolve, reject) => {
+      super.findandbind(option, (err, data) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(data);
+        }
+      });
+    });
+  }
+  authbind(dn, password) {
+    return new Promise((resolve, reject) => {
+      super.search(dn, password, (err, data) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(data);
+        }
+      });
+    });
+  }
 }
 
 module.exports = LdapPromise;

@@ -27,13 +27,13 @@ ldap.search({
 This module is installed via npm:
 
 ``` bash
-$ npm install mysql-promise
+$ npm install ldap-promise
 ```
 
 ## Example Usage
 
 ```
-var ldap = new LDAP({
+let ldap = new LDAP({
     uri:             'ldap://server',   // string 
     validatecert:    false,             // Verify server certificate 
     connecttimeout:  -1,                // seconds, default is -1 (infinite timeout), connect timeout 
@@ -67,7 +67,7 @@ ldap.search({
 ### generator
 
 ```
-var co = require('co');
+let co = require('co');
 
 co(function *() {
 	let result = null;
@@ -81,12 +81,3 @@ co(function *() {
 	console.log(result);
 });
 ```
-
-## TODO
-
--remove
--add
--rename
--modify
--findandbind
--authbind
