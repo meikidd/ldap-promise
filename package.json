@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Small wrapper for ldap-client that use promises.",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "lint-fix": "eslint index.js --fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/meikidd/ldap-promise.git"
@@ -12,12 +16,20 @@
     "ldap"
   ],
   "author": "meikidd <meikidd@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/meikidd/ldap-promise/issues"
   },
   "homepage": "https://github.com/meikidd/ldap-promise#readme",
   "dependencies": {
     "ldap-client": "^3.1.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.6.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0"
   }
 }

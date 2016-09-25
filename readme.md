@@ -1,8 +1,8 @@
 # ldap-promise
 
-Small wrapper for ldap-client that use promises.
+Small wrapper for [ldap-client](https://www.npmjs.com/package/ldap-client) that use promises.
 
-You can use ldap-client in this way
+You can use [ldap-client](https://www.npmjs.com/package/ldap-client) in this way
 
 ```
 let data = yield ldap.search({

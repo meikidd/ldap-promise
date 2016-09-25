@@ -1,4 +1,4 @@
-/**!
+/**
  *
  * ldap-promise
  *
@@ -8,22 +8,18 @@
  * Authors:
  *  meikidd <meikidd@gmail.com>
  *
- * TODO:remove, add, rename, modify, findandbind, authbind
  */
 
 const LDAP = require('ldap-client');
 
 class LdapPromise extends LDAP {
-  constructor(option, callback) {
-    super(option, callback);
-  }
   bind(option) {
     return new Promise((resolve, reject) => {
-      super.bind(option, err => {
+      super.bind(option, (err) => {
         if (err) {
           reject({
             status: false,
-            error: err
+            error: err,
           });
         } else {
           resolve({ status: true });
