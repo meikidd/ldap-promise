@@ -1,6 +1,9 @@
 {
   "extends": "eslint-config-airbnb",
-  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true
+  },
   "rules": {
     "comma-dangle": ["error", "always-multiline"]
   }
