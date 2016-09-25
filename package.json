@@ -1,6 +1,6 @@
 {
   "name": "ldap-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small wrapper for ldap-client that use promises.",
   "main": "index.js",
   "scripts": {
