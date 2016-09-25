@@ -22,7 +22,7 @@ class LdapPromise extends LDAP {
             error: err,
           });
         } else {
-          resolve({ status: true });
+          resolve({status: true});
         }
       });
     });
