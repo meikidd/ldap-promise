@@ -2,9 +2,6 @@
  *
  * ldap-promise
  *
- * Copyright(c) cnpmjs.org and other contributors.
- * MIT Licensed
- *
  * Authors:
  *  meikidd <meikidd@gmail.com>
  *
